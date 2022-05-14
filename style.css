@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+h2 {
+    padding: 10px;
+    border: solid 1px black;
+    text-align: right;
+}
+
+button {
+    height: 45px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(201, 194, 194);
+}
+
+button:hover {
+    background-color:rgb(175, 171, 171);
+}
+
+button:active {
+    background-color:rgb(175, 171, 171);
+    box-shadow: 0 2px #c9c9c9;
+    transform: translateY(3px)
+
+}
+
+.equals {
+    background-color: orange;
+}
+
+
+#calc-container {
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#grid-container button:last-child{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
